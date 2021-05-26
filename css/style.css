@@ -14,6 +14,8 @@ body {
 .container {
   width: 1120px;
   margin: 0 auto;
+
+  outline: 1px solid tomato;
 }
 
 .section-bg {
@@ -23,16 +25,19 @@ body {
 
 .list {
   display: flex;
+  margin: 0;
   padding: 0;
   list-style: none;
 }
 
 .link {
+  display: block;
   text-decoration: none;
   color: inherit;
 }
 
 .title {
+  margin: 0;
   font-weight: bold;
   font-size: 40px;
   line-height: 1.2;
@@ -40,4 +45,89 @@ body {
 
 svg {
   fill: currentColor;
+}
+
+p {
+  margin: 0;
+}
+
+/* --------------------------  Header -------------------------- */
+.header .container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+}
+
+.logotype {
+  margin-right: 88px;
+}
+
+.logo-text {
+  font-family: 'Exo 2', sans-serif;
+  font-size: 9.6px;
+  line-height: 0;
+}
+
+.navigation .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.navigation .link {
+  padding-top: 30px;
+  padding-bottom: 15px;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 1.1;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.header .contacts {
+  display: block;
+  margin-left: auto;
+  align-self: flex-end;
+}
+
+.header .link-phone {
+  font-size: 18px;
+}
+
+.header .link-order {
+  font-size: 14px;
+  color: var(--accent);
+}
+
+.text-accent {
+  color: var(--accent);
+}
+
+/* --------------------------  Hero -------------------------- */
+.hero {
+  width: 1440px;
+  height: 800px;
+  margin: 0 auto;
+  background-image: url(../images/bg-hero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero .container {
+  padding-top: 136px;
+  padding-bottom: 172px;
+  padding-right: 500px;
+}
+
+.hero .title {
+  line-height: 1.37;
+}
+
+.hero p {
+  margin-bottom: 52px;
+}
+
+.hero .list {
+  margin-bottom: 126px;
 }
