@@ -14,6 +14,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
+    <link rel="stylesheet" href="./css/fonts.css" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
@@ -27,11 +28,17 @@
         </div>
         <nav class="navigation">
           <ul class="list">
-            <li class="item"><a class="link" href="">о компании</a></li>
-            <li class="item"><a class="link" href="">наши преимущества</a></li>
-            <li class="item"><a class="link" href="">услуги и цены</a></li>
-            <li class="item"><a class="link" href="">проекты</a></li>
-            <li class="item"><a class="link" href="">монтажники</a></li>
+            <li class="item"><a class="link" href="#about">о компании</a></li>
+            <li class="item">
+              <a class="link" href="#advantage">наши преимущества</a>
+            </li>
+            <li class="item">
+              <a class="link" href="#price">услуги и цены</a>
+            </li>
+            <li class="item"><a class="link" href="#works">проекты</a></li>
+            <li class="item">
+              <a class="link" href="#installers">монтажники</a>
+            </li>
           </ul>
         </nav>
         <ul class="list contacts">
@@ -46,7 +53,7 @@
         </ul>
       </div>
     </header>
-    <section class="hero">
+    <section class="hero" id="about">
       <div class="container">
         <h2 class="title">
           Создаем
@@ -59,21 +66,67 @@
           <br />
           разумной цене
         </h2>
-        <p>
+        <p class="text">
           Используем европейские материалы с лучшим соотношением цены-качества
         </p>
         <ul class="list">
-          <li class="item">Бесплатный выезд при заключении договора</li>
-          <li class="item">Гарантия на монтажные работы – 2 года</li>
-          <li class="item">Сантехника ведущих европейских брендов</li>
+          <li class="item">
+            <div class="icon-box">
+              <div class="bg-icons">
+                <svg class="icons" width="47" height="28">
+                  <use href="./images/icons.svg#avto"></use>
+                </svg>
+              </div>
+            </div>
+            <p class="card-text">Бесплатный выезд при заключении договора</p>
+          </li>
+          <li class="item">
+            <div class="icon-box">
+              <div class="bg-icons">
+                <svg class="icons-garanty" width="24" height="30">
+                  <use href="./images/icons.svg#garanty"></use>
+                </svg>
+              </div>
+            </div>
+            <p class="card-text">Гарантия на монтажные работы – 2 года</p>
+          </li>
+          <li class="item">
+            <div class="icon-box">
+              <div class="bg-icons">
+                <svg class="icons" width="34" height="28">
+                  <use href="./images/icons.svg#pat"></use>
+                </svg>
+              </div>
+            </div>
+            <p class="card-text">Сантехника ведущих европейских брендов</p>
+          </li>
         </ul>
         <button class="button" type="button">Заказать монтаж</button>
       </div>
     </section>
     <section class="section-video">
       <div class="container">
-        <h2 class="title">Посмотрите короткое видео о нашей компании</h2>
+        <h2 class="title">
+          Посмотрите короткое видео
+          <br />
+          о нашей компании
+        </h2>
+        <div class="block-video">
+          <img
+            src="./images/video.jpg"
+            alt="Видео про компанию"
+            width="750"
+            height="443"
+          />
+          <a class="button-video" href="">
+            <svg class="video-icon" width="45" height="37">
+              <use href="./images/icons.svg#arrow"></use>
+            </svg>
+          </a>
+          <div class="decor-block"></div>
+        </div>
         <button class="button" type="button">Оставить заявку</button>
+        <div class="waves"></div>
       </div>
     </section>
     <section class="about">
@@ -232,7 +285,7 @@
         </ul>
       </div>
     </section>
-    <section class="advantage section-bg">
+    <section class="advantage section-bg" id="advantage">
       <div class="container">
         <h2 class="title">Преимущества сантехнической компании VIP Santeh</h2>
         <ul class="list">
@@ -307,7 +360,7 @@
         </ul>
       </div>
     </section>
-    <section class="price">
+    <section class="price" id="price">
       <div class="container">
         <h2 class="title">Услуги и цены</h2>
         <ul class="list">
@@ -400,7 +453,7 @@
         </form>
       </div>
     </section>
-    <section class="works">
+    <section class="works" id="works">
       <div class="container">
         <h2 class="title">
           Примеры выполненных сантехнических работ нашей компанией VIP Santeh
@@ -452,7 +505,7 @@
         </ul>
       </div>
     </section>
-    <section class="installers">
+    <section class="installers" id="installers">
       <div class="container">
         <h2 class="title">Монтажники VIP Santeh</h2>
         <ul class="list">

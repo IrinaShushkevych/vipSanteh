@@ -2,10 +2,11 @@
   --color-text: #24242e;
   --bg-color: #fff;
   --accent: #1e489b;
+  --bg-decorate: #dcdcdc;
 }
 
 body {
-  font-family: 'Circe', sans-serif;
+  font-family: 'Circle', sans-serif;
   font-size: 16px;
   line-height: 1.2;
   color: var(--text-color);
@@ -51,11 +52,19 @@ p {
   margin: 0;
 }
 
-/* --------------------------  Header -------------------------- */
-.header .container {
+img {
+  display: block;
+}
+
+/* ------------------------------------  Header ------------------------------------ */
+.header {
   position: absolute;
   top: 0;
   left: 0;
+  width: 100%;
+}
+
+.header .container {
   display: flex;
   align-items: center;
 }
@@ -75,6 +84,8 @@ p {
 }
 
 .navigation .link {
+  position: relative;
+  display: block;
   padding-top: 30px;
   padding-bottom: 15px;
   font-weight: bold;
@@ -83,6 +94,23 @@ p {
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
+  transition: color 250ms ease;
+}
+
+.navigation .link:hover,
+.navigation .link:focus {
+  color: var(--accent);
+}
+
+.navigation .link:hover::before,
+.navigation .link:focus::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  height: 4px;
+  width: 100%;
+  background-color: var(--accent);
 }
 
 .header .contacts {
@@ -104,30 +132,191 @@ p {
   color: var(--accent);
 }
 
-/* --------------------------  Hero -------------------------- */
+.button {
+  padding: 21px 65px;
+  font-size: 18px;
+  line-height: 1.5;
+  color: var(--bg-color);
+  background-color: var(--accent);
+  border: none;
+}
+
+form .button {
+  padding: 21px 114px;
+}
+
+/* ------------------------------------  Hero ----------------------------------- */
 .hero {
   width: 1440px;
-  height: 800px;
+  /* max-height: 800px; */
   margin: 0 auto;
-  background-image: url(../images/bg-hero.jpg);
-  background-position: center;
+  background-image: url(../images/bg-mask.png), url(../images/bg-rect.png),
+    url(../images/bg.jpg);
+  /* background-image: url(../images/bg-hero.jpg); */
+  background-position: top right, top left, top left;
   background-repeat: no-repeat;
-  background-size: cover;
+  /* background-size: cover; */
+  outline: 1px solid greenyellow;
 }
+
 .hero .container {
   padding-top: 136px;
   padding-bottom: 172px;
-  padding-right: 500px;
+  padding-right: 365px;
 }
 
 .hero .title {
   line-height: 1.37;
 }
 
-.hero p {
+.hero .text {
   margin-bottom: 52px;
+  font-size: 18px;
+  line-height: 1.5;
 }
 
 .hero .list {
-  margin-bottom: 126px;
+  margin-bottom: 120px;
+}
+
+.hero .item {
+  display: flex;
+  align-items: center;
+}
+
+.hero .icon-box {
+  position: relative;
+  width: 57px;
+  height: 43px;
+  padding-right: 11px;
+  padding-left: 11px;
+  margin-right: 10px;
+}
+
+.hero .bg-icons {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 35px;
+  height: 43px;
+  transform: translate(-50%, -50%) skewX(-30deg);
+  background-color: var(--accent);
+  overflow: hidden;
+}
+
+.hero .icons {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%) skewX(30deg);
+}
+
+.icons-garanty {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) skewX(30deg);
+}
+
+.card-text {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.1;
+}
+
+/* ------------------------------------  Section video ----------------------------------- */
+.section-video {
+  position: relative;
+  width: 1440px;
+  margin: 0 auto;
+
+  outline: 1px solid greenyellow;
+}
+
+.section-video .container {
+  padding-top: 68px;
+  padding-bottom: 52px;
+}
+.section-video .title {
+  margin-bottom: 30px;
+}
+
+.section-video .block-video {
+  position: relative;
+  width: 750px;
+  margin-bottom: 52px;
+}
+
+.section-video .button-video {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 130px;
+  height: 149px;
+  background-color: var(--color-text);
+  transform: translate(50%, -50%) skewX(-30deg);
+  transition: background-color 250ms ease;
+}
+
+.section-video .button-video:hover,
+.section-video .button-video:focus {
+  background-color: var(--accent);
+}
+
+.video-icon {
+  transform: skewX(30deg);
+}
+
+.section-video .decor-block {
+  position: absolute;
+  width: 71px;
+  height: 81px;
+  bottom: calc(50% + 74.5px);
+  left: calc(100% + 130px);
+  background-color: var(--bg-decorate);
+  transform: skewX(-30deg);
+
+  outline: violet;
+}
+
+.section-video .waves {
+  position: absolute;
+  bottom: 0;
+  right: 0%;
+  height: 280px;
+  width: 700px;
+  background-image: url(../images/waves.svg);
+  background-repeat: no-repeat;
+}
+
+.about .container {
+  padding-top: 51px;
+  padding-bottom: 132px;
+}
+
+.about .title {
+  margin-bottom: 56px;
+}
+
+.about .list {
+  flex-wrap: wrap;
+  margin-right: -85px;
+}
+
+.about .item {
+  flex-basis: calc(100% / 2 - 85px);
+  margin-right: 85px;
+}
+
+.about .card-title {
+  font-size: 30px;
+  line-height: 1.2;
+}
+
+.about .text {
+  font-size: 16px;
+  line-height: 1.2;
 }
