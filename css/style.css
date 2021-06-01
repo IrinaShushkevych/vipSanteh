@@ -3,6 +3,9 @@
   --bg-color: #fff;
   --accent: #1e489b;
   --bg-decorate: #dcdcdc;
+  --bg-field: #353542;
+  --bg-card: #f8f8f8;
+  --icons: #9898a7;
 }
 
 body {
@@ -54,6 +57,47 @@ p {
 
 img {
   display: block;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+.button {
+  padding: 21px 65px;
+  font-size: 18px;
+  line-height: 1.5;
+  color: var(--bg-color);
+  background-color: var(--accent);
+  border: none;
+  cursor: pointer;
+}
+
+.field {
+  height: 69px;
+  width: 360px;
+  margin-right: 10px;
+  padding-left: 30px;
+  padding-top: 21px;
+  padding-bottom: 21px;
+  border: none;
+  background-color: var(--bg-field);
+  color: var(--bg-color);
+}
+
+.field:hover,
+.field:focus {
+  border: 2px solid var(--accent);
+  outline: none;
+}
+
+.is-hidden {
+  visibility: hidden;
+  position: absolute;
 }
 
 /* ------------------------------------  Header ------------------------------------ */
@@ -132,15 +176,6 @@ img {
   color: var(--accent);
 }
 
-.button {
-  padding: 21px 65px;
-  font-size: 18px;
-  line-height: 1.5;
-  color: var(--bg-color);
-  background-color: var(--accent);
-  border: none;
-}
-
 form .button {
   padding: 21px 114px;
 }
@@ -148,7 +183,6 @@ form .button {
 /* ------------------------------------  Hero ----------------------------------- */
 .hero {
   width: 1440px;
-  /* max-height: 800px; */
   margin: 0 auto;
   background-image: url(../images/bg-mask.png), url(../images/bg-rect.png),
     url(../images/bg.jpg);
@@ -286,8 +320,8 @@ form .button {
   position: absolute;
   bottom: 0;
   right: 0%;
-  height: 280px;
-  width: 700px;
+  height: 260px;
+  width: 650px;
   background-image: url(../images/waves.svg);
   background-repeat: no-repeat;
 }
@@ -319,4 +353,347 @@ form .button {
 .about .text {
   font-size: 16px;
   line-height: 1.2;
+}
+
+/* ------------------------------------  About ----------------------------------- */
+.about .list {
+  margin-right: -85px;
+  margin-bottom: -76px;
+}
+
+.about .item {
+  display: flex;
+  margin-right: 85px;
+  margin-bottom: 76px;
+}
+
+.about .block {
+  width: 116px;
+  height: 125px;
+  padding: 0 29px;
+  margin-right: 48px;
+}
+
+.about .number-block {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 58px;
+  height: 125px;
+  color: var(--bg-color);
+  background-color: var(--color-text);
+
+  transform: skewX(-25deg);
+}
+
+.about .item:nth-child(4n) .number-block,
+.about .item:nth-child(4n + 1) .number-block {
+  background-color: var(--bg-decorate);
+}
+
+.about .number {
+  font-weight: 800;
+  font-size: 50px;
+  transform: skewX(25deg);
+}
+
+.about .card-title {
+  font-size: 30px;
+  margin-bottom: 11px;
+}
+
+/* ------------------------------------  Application ----------------------------------- */
+
+.application .container {
+  position: relative;
+  padding-top: 55px;
+  padding-bottom: 30px;
+  background-image: url(../images/rect55.svg), url(../images/rect56.svg);
+  background-repeat: no-repeat;
+  background-position: 80% bottom, 98% 18%;
+}
+
+.application .bg-block-accent {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 48px;
+  height: 55px;
+  background-color: var(--accent);
+  transform: translate(400%, -70%) skewX(30deg);
+}
+
+.application .bg-block-counter {
+  position: absolute;
+  top: 10%;
+  left: 74%;
+  width: 178px;
+  height: 174px;
+  background-image: url(../images/counter.png);
+  background-repeat: no-repeat;
+  background-position: 90% 18%;
+}
+
+.application .title {
+  width: 813px;
+  margin-bottom: 47px;
+  font-weight: bold;
+  font-size: 27px;
+}
+
+.application form {
+  margin-bottom: 16px;
+}
+
+.application .comment {
+  font-size: 14px;
+}
+
+/* ------------------------------------  Partner ----------------------------------- */
+.partner .container {
+  padding-top: 75px;
+  padding-bottom: 124px;
+}
+
+.partner .title {
+  margin-bottom: 54px;
+}
+
+.partner .list {
+  margin-right: -30px;
+  /* flex-wrap: wrap; */
+}
+
+.partner .item {
+  display: flex;
+  justify-content: flex-start;
+  margin-right: 30px;
+  padding: 40px;
+  flex-basis: calc(100% / 3 - 30px);
+  background-color: var(--bg-card);
+}
+
+.partner .text {
+  font-size: 20px;
+}
+
+/* ------------------------------------  Advantage ----------------------------------- */
+
+.advantage .bg-block {
+  width: 1440px;
+  margin: 0 auto;
+
+  background-image: url(../images/adv-rect-big.svg),
+    url(../images/adv-rect-small.svg), url(../images/adv-waves.svg);
+  background-repeat: no-repeat;
+  background-position: 73% 100%, 84% 87%, 100% 85%;
+}
+
+.advantage .container {
+  padding-top: 70px;
+  padding-bottom: 133px;
+}
+
+.advantage .title {
+  margin-bottom: 74px;
+}
+
+.advantage .list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -57px;
+  margin-bottom: -63px;
+}
+
+.advantage .item {
+  flex-basis: calc(100% / 3 - 57px);
+
+  margin-right: 57px;
+  margin-bottom: 63px;
+}
+
+.advantage .block-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 147px;
+  height: 147px;
+  margin-bottom: 40px;
+  background-image: url(../images/ellipse.svg);
+  color: var(--icons);
+  transition: color 250ms ease, background-image 250ms ease;
+}
+
+.advantage .item:hover .block-icon {
+  color: var(--accent);
+  background-image: url(../images/ellipse-accent.svg);
+}
+
+.advantage .block-icon svg {
+  fill: currentColor;
+}
+
+.advantage .text {
+  font-size: 24px;
+}
+
+.advantage .bg-block-big {
+  width: 200px;
+  height: 149px;
+  transform: skewX(-35deg);
+}
+
+/* ------------------------------------  Evalution ----------------------------------- */
+
+.evalution .container {
+  padding-top: 93px;
+  padding-bottom: 52px;
+}
+
+.evalution .title {
+  font-weight: 700;
+  font-size: 27px;
+  margin-bottom: 17px;
+}
+
+.evalution .field {
+  background-color: var(--bg-color);
+  border: 1px solid var(--icons);
+  margin-bottom: 16px;
+}
+
+/* ------------------------------------  Guarantee ----------------------------------- */
+
+.guarantee .container {
+  padding-top: 52px;
+  padding-bottom: 122px;
+}
+
+.guarantee .title {
+  margin-bottom: 82px;
+}
+
+.guarantee .item {
+  position: relative;
+  flex-basis: calc(100% / 4 -330);
+}
+
+.guarantee .item:not(:last-child) {
+  margin-right: 110px;
+}
+
+.guarantee .item:nth-child(2n) {
+  margin-top: 30px;
+}
+
+.guarantee .card-title {
+  display: block;
+
+  margin-bottom: 52px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 0.7;
+  width: 66px;
+  text-align: center;
+}
+
+.guarantee .card-number {
+  font-weight: 800;
+  font-size: 70px;
+  color: var(--accent);
+}
+
+.guarantee .icons-bottom {
+  position: absolute;
+  top: 18%;
+  left: 60%;
+  width: 169px;
+  height: 40px;
+  background-image: url(../images/vector8.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.guarantee .icons-top {
+  position: absolute;
+  bottom: 110%;
+  left: 60%;
+  width: 169px;
+  height: 40px;
+  background-image: url(../images/vector10.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.guarantee .text {
+  font-size: 24px;
+}
+
+/* ------------------------------------  Price ----------------------------------- */
+
+.price .container {
+  padding-top: 122px;
+  padding-bottom: 61px;
+}
+
+.price .title {
+  margin-bottom: 54px;
+}
+
+.price .item {
+  display: block;
+  padding: 35px 48px 61px 41px;
+  border-bottom: 9px solid var(--accent);
+}
+
+.price .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.price .card-title {
+  height: 96px;
+  padding-bottom: 50px;
+  margin-bottom: 47px;
+
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--accent);
+
+  background-image: url(../images/dotted.svg);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+}
+
+.price .price-list {
+  display: block;
+  margin-bottom: 30px;
+}
+
+.price .price-item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.price .text-price {
+  margin-top: 18px;
+  font-weight: 700;
+}
+
+.price .link {
+  font-weight: 700;
+  color: var(--accent);
+}
+
+/* ------------------------------------ Form Price ----------------------------------- */
+
+.form-price .container {
+  padding-top: 61px;
+  padding-bottom: 87px;
+  background-image: url(../images/rect55.svg), url(../images/rect56.svg);
+  background-repeat: no-repeat;
+  background-position: 83% bottom, 100% 10%;
+}
+
+.form-price .title {
+  margin-bottom: 38px;
+  font-weight: 700;
+  font-size: 27px;
 }
