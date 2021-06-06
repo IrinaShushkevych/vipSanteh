@@ -95,6 +95,10 @@ h6 {
   outline: none;
 }
 
+.field::placeholder {
+  color: var(--bg-color);
+}
+
 .is-hidden {
   visibility: hidden;
   position: absolute;
@@ -624,6 +628,7 @@ form .button {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .guarantee .text {
   font-size: 24px;
 }
@@ -684,16 +689,601 @@ form .button {
 
 /* ------------------------------------ Form Price ----------------------------------- */
 
+.form-price .bg-section {
+  position: relative;
+  width: 1440px;
+  margin: 0 auto;
+
+  background-image: url(../images/rect55.svg), url(../images/rect56.svg);
+  background-repeat: no-repeat;
+  background-position: 87% bottom, 100% 10%;
+}
+
 .form-price .container {
   padding-top: 61px;
   padding-bottom: 87px;
-  background-image: url(../images/rect55.svg), url(../images/rect56.svg);
-  background-repeat: no-repeat;
-  background-position: 83% bottom, 100% 10%;
 }
 
 .form-price .title {
   margin-bottom: 38px;
   font-weight: 700;
   font-size: 27px;
+}
+
+.form-price .bg-block-accent {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 48px;
+  height: 55px;
+  background-color: var(--accent);
+  transform: translate(-50%, -70%) skewX(30deg);
+}
+
+.form-price .bg-block-calc {
+  position: absolute;
+  width: 142px;
+  height: 142px;
+  top: -5%;
+  left: 77%;
+  color: var(--bg-field);
+}
+
+.form-price .bg-block-calc svg {
+  fill: var(--bg-field);
+}
+
+/* ------------------------------------ Works ----------------------------------- */
+
+.works .container {
+  padding-top: 63px;
+  padding-bottom: 115px;
+}
+
+.works .block-header {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 60px;
+}
+
+.works .list-arrow {
+  margin-left: auto;
+}
+
+.works .buttons-arrow {
+  width: 40px;
+  height: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: none;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.works .button-left {
+  margin-right: 41px;
+  background-image: url(../images/arrow-left.svg);
+}
+
+.works .button-right {
+  background-image: url(../images/arrow-right.svg);
+}
+
+.works .card-img {
+  display: flex;
+  margin-right: 54px;
+}
+.works .card-img img:not(:last-child) {
+  margin-right: 50px;
+}
+
+.works .card-item {
+  display: flex;
+}
+
+.works .price-list {
+  display: block;
+}
+
+.works .card-title {
+  font-size: 30px;
+  margin-bottom: 32px;
+}
+
+.works .card-header {
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.works .text {
+  margin-bottom: 16px;
+}
+
+.works .price-list {
+  margin-top: 27px;
+  padding-left: 70px;
+  padding-bottom: 34px;
+  padding-top: 34px;
+  border-left: 9px solid var(--accent);
+}
+
+.works .price-list .item {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.works .price-list .card-icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translateX(-250%);
+}
+
+.works .block-nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 58px;
+}
+
+.works .button-page {
+  width: 46px;
+  height: 8px;
+  background-color: var(--color-text);
+  border: none;
+}
+
+/* ------------------------------------ Experts ----------------------------------- */
+
+.experts .container {
+  padding-top: 70px;
+  padding-bottom: 150px;
+
+  background-image: url(../images/adv-rect-big.svg),
+    url(../images/adv-rect-small.svg);
+  background-repeat: no-repeat;
+  background-position: 87% 100%, 100% 68%;
+}
+
+.experts .title {
+  margin-bottom: 65px;
+}
+
+.experts .item {
+  display: flex;
+  flex-basis: calc((100% - 51px) / 2);
+  align-items: center;
+}
+
+.experts .item:not(:last-child) {
+  margin-right: 51px;
+}
+
+.card-photo {
+  padding: 24px;
+  width: 219px;
+  height: 219px;
+  padding-right: 50px;
+  margin-right: 54px;
+  background-image: url(../images/ellipse.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* .experts .card-block {
+  margin-top: 31px;
+} */
+
+.experts .card-title {
+  font-weight: 400;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.experts .card-text {
+  font-size: 15px;
+}
+
+/* ------------------------------------ Installers ----------------------------------- */
+
+.installers .container {
+  padding-top: 70px;
+  padding-bottom: 87px;
+}
+
+.installers .title {
+  margin-bottom: 60px;
+}
+
+.installers .item {
+  display: flex;
+  flex-basis: calc((100% - 51px) / 2);
+  align-items: center;
+}
+
+.installers .item:not(:last-child) {
+  margin-right: 51px;
+}
+
+.installers .card-certificate {
+  display: inline-block;
+  padding: 10px 11px;
+  margin-top: 26px;
+  border: 1px solid var(--color-text);
+}
+
+.installers .card-title {
+  font-weight: 400;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* ------------------------------------ About Us ----------------------------------- */
+
+.about-us .container {
+  padding-top: 76px;
+  padding-bottom: 40px;
+}
+
+.about-us .title {
+  margin-bottom: 43px;
+}
+
+.about-us .list {
+  align-items: center;
+}
+
+.about-us .item:not(:last-child) {
+  margin-right: 53px;
+}
+
+.about-us .item:nth-child(2n-1) {
+  width: 314px;
+  padding: 85px 40px 99px 44px;
+}
+
+.about-us .item:nth-child(2n) {
+  position: relative;
+  width: 360px;
+  padding: 95px 68px 112px 66px;
+}
+
+.about-us .item:nth-child(2n-1) .numbers {
+  font-weight: 800;
+  font-size: 55px;
+  color: var(--accent);
+  margin-bottom: 16px;
+}
+
+.about-us .item:nth-child(2n) .numbers {
+  font-weight: 800;
+  font-size: 70px;
+  color: var(--accent);
+  margin-bottom: 11px;
+}
+
+.about-us .text {
+  font-size: 20px;
+}
+
+.about-us .icon-hand {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.about-us .icon-hand-big {
+  transform: translate(-100%, 50%);
+}
+
+.about-us .icon-hand-medium {
+  transform: translate(-50%, -25%);
+}
+
+.about-us .icon-hand-small {
+  transform: translate(-250%, -180%);
+}
+
+/* ------------------------------------ Ordering Services ----------------------------------- */
+
+.ordering-services .container {
+  padding-top: 45px;
+  padding-bottom: 135px;
+}
+
+.ordering-services .title {
+  margin-bottom: 60px;
+}
+
+.ordering-services .list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: -30px;
+  margin-right: -30px;
+}
+
+.ordering-services .item {
+  position: relative;
+  flex-basis: calc(100% / 4 - 30px);
+  margin-bottom: 30px;
+  margin-right: 30px;
+}
+
+.ordering-services .card-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  margin-left: 28px;
+  margin-bottom: 23px;
+  width: 60px;
+  height: 71px;
+  background-color: var(--accent);
+  transform: skewX(-30deg);
+}
+
+.ordering-services .number {
+  font-weight: 800;
+  font-size: 40px;
+  color: white;
+  transform: skewX(30deg);
+}
+
+.ordering-services .card-title {
+  margin-bottom: 15px;
+}
+
+.ordering-services .icons-bottom {
+  position: absolute;
+  top: 15%;
+  left: 40%;
+  width: 169px;
+  height: 40px;
+  background-image: url(../images/vector8.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.ordering-services .icons-top {
+  position: absolute;
+  bottom: 90%;
+  left: 50%;
+  width: 169px;
+  height: 40px;
+  background-image: url(../images/vector10.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* ------------------------------------ Order Instaler ----------------------------------- */
+.order-installer .bg-block {
+  width: 1440px;
+  margin: 0 auto;
+  background-image: url(../images/rect55.svg), url(../images/rect56.svg);
+  background-repeat: no-repeat;
+  background-position: 83% bottom, 95% 18%;
+}
+
+.order-installer .container {
+  position: relative;
+  padding-top: 55px;
+  padding-bottom: 75px;
+}
+
+.order-installer .bg-block-accent {
+  position: absolute;
+  top: 0;
+  left: 30%;
+  width: 48px;
+  height: 55px;
+  background-color: var(--accent);
+  transform: translate(400%, -70%) skewX(30deg);
+}
+
+.order-installer .bg-block-counter {
+  position: absolute;
+  top: -4%;
+  left: 74%;
+  width: 178px;
+  height: 174px;
+  background-image: url(../images/counter.png);
+  background-repeat: no-repeat;
+  background-position: 90% 18%;
+}
+
+.order-installer .title {
+  margin-bottom: 35px;
+  font-weight: 700;
+  font-size: 27px;
+}
+
+.order-installer form {
+  margin-bottom: 16px;
+}
+
+/* ------------------------------------ Order Instaler ----------------------------------- */
+
+.reviews .container {
+  padding-top: 55px;
+  padding-bottom: 39px;
+}
+
+.reviews .block-header {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 64px;
+}
+
+.reviews .list-arrow {
+  margin-left: auto;
+}
+
+.reviews .buttons-arrow {
+  width: 40px;
+  height: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: none;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.reviews .button-left {
+  margin-right: 41px;
+  background-image: url(../images/arrow-left.svg);
+}
+
+.reviews .button-right {
+  background-image: url(../images/arrow-right.svg);
+}
+
+.reviews .list-card {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.reviews .item-card {
+  display: flex;
+  align-items: center;
+  padding: 35px 48px 45px 55px;
+}
+
+.reviews .item-card:not(:last-child) {
+  margin-right: 30px;
+}
+
+.reviews .card-photo {
+  width: 112px;
+  height: 112px;
+  padding: 10px;
+  margin-right: 37px;
+  background: none;
+  border: 1px solid var(--color-text);
+  border-radius: 50%;
+}
+
+.reviews .card-title {
+  font-size: 20px;
+}
+
+.reviews .card-rating {
+  margin-bottom: 22px;
+}
+
+.reviews .icon-rating {
+  fill: var(--icons);
+}
+
+.reviews .rating-good {
+  fill: yellow;
+}
+
+.reviews .text {
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.reviews .block-nav {
+  display: flex;
+  justify-content: center;
+}
+
+.reviews .button-page {
+  width: 46px;
+  height: 8px;
+  background-color: var(--color-text);
+  border: none;
+}
+
+/* ------------------------------------ Questions ----------------------------------- */
+
+.questions .container {
+  padding-top: 39px;
+  padding-bottom: 152px;
+  padding-right: 293px;
+}
+
+.questions .title {
+  margin-bottom: 54px;
+}
+
+.questions .list {
+  display: block;
+}
+
+.questions .item {
+  display: flex;
+  width: 100%;
+}
+
+.questions .item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.questions .block-question {
+  padding: 20px 42px;
+}
+
+.questions .block-button {
+  margin-left: auto;
+}
+
+.questions .button-question {
+  width: 42px;
+  height: 100%;
+  background-color: var(--bg-field);
+  border: none;
+}
+
+.questions .button-close {
+  background-color: var(--accent);
+}
+.questions .button-question .icons {
+  stroke: var(--bg-color);
+}
+
+.questions .icons-hide {
+  visibility: hidden;
+}
+
+.questions .question {
+  margin-bottom: 18px;
+  font-size: 20px;
+}
+
+.questions .answer {
+  font-weight: 300;
+  font-size: 14px;
+}
+
+/* ------------------------------------ Form ----------------------------------- */
+.form .bg-block {
+  position: relative;
+  width: 1440px;
+  margin: 0 auto;
+  background-image: url(../images/rect55.svg), url(../images/rect56.svg);
+  background-repeat: no-repeat;
+  background-position: 81% bottom, 95% 24%;
+}
+
+.form .bg-block-accent {
+  position: absolute;
+  top: 0;
+  left: 38%;
+  width: 48px;
+  height: 55px;
+  background-color: var(--accent);
+  transform: translate(400%, -70%) skewX(30deg);
+}
+
+.form .container {
+  padding-top: 55px;
+  padding-bottom: 88px;
+}
+
+.form .title {
+  ont-weight: 700;
+  font-size: 27px;
+  margin-bottom: 46px;
 }

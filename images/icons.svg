@@ -13,13 +13,8 @@
         stroke="var(--color2, #fff)"
         stroke-width="2.667"
         d="M2.667 2.667l26.667 26.667L56.001 2.667"
-      /></symbol><symbol id="arrow-left" viewBox="0 0 75 32"><path
-        stroke-width="2.667"
-        d="M74.667 16H3.556M17.27 2.286L3.556 16 17.27 29.714"
-      /></symbol><symbol id="arrow-right" viewBox="0 0 75 32"><path
-        stroke-width="2.667"
-        d="M0 16h71.111M57.397 2.286L71.111 16 57.397 29.714"
-      /></symbol><symbol id="arrow-up" viewBox="0 0 59 32"><path
+      /></symbol>
+      <symbol id="arrow-up" viewBox="0 0 59 32"><path
         fill="none"
         stroke="var(--color2, #fff)"
         stroke-width="2.667"
@@ -216,7 +211,6 @@
         stroke-width="2.087"
         d="M28.436 14.834L15.65 27.62A8.353 8.353 0 013.838 15.808L16.624 3.022a5.57 5.57 0 017.874 0 5.57 5.57 0 010 7.874l-12.8 12.786a2.784 2.784 0 01-3.938-3.938L19.572 7.946"
       /></symbol><symbol id="star" viewBox="0 0 34 32"><path
-        fill="var(--color4, #ffde67)"
         d="M16.572.602a.739.739 0 011.318 0l4.492 8.885a.74.74 0 00.555.398l10.016 1.429a.738.738 0 01.405 1.266l-7.224 6.87a.741.741 0 00-.219.663l1.708 9.722a.739.739 0 01-1.065.785l-8.99-4.616a.738.738 0 00-.675 0l-8.99 4.616a.739.739 0 01-1.065-.785l1.708-9.722a.739.739 0 00-.218-.663l-7.224-6.87a.738.738 0 01.405-1.266l10.016-1.429a.74.74 0 00.555-.398L16.572.602z"
       /></symbol><symbol id="stick" viewBox="0 0 34 32"><path
         fill="none"

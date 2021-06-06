@@ -423,10 +423,7 @@
           />
           <button class="button" type="submit">Оставить заявку</button>
           <label>
-            <input
-              type="file"
-              name="user-photo"
-            />
+            <input type="file" name="user-photo" />
             Прикрепить фото
           </label>
         </form>
@@ -552,56 +549,106 @@
       </div>
     </section>
     <section class="form-price section-bg">
-      <div class="container">
-        <h2 class="title">
-          Точная стоимость сантехнических работ оговаривается индивидуально
-          после
-          <br />
-          ознакомления с проектной документацией и выезда монтажника на объект
-        </h2>
-        <form name="price">
-          <input
-            class="field"
-            type="text"
-            name="user-name"
-            placeholder="Введите имя"
-          />
-          <input
-            class="field"
-            type="tel"
-            name="user-phone"
-            placeholder="Телефон"
-          />
-          <button class="button" type="submit">Получить расчет</button>
-        </form>
+      <div class="bg-section">
+        <div class="container">
+          <h2 class="title">
+            Точная стоимость сантехнических работ оговаривается индивидуально
+            после
+            <br />
+            ознакомления с проектной документацией и выезда монтажника на объект
+          </h2>
+          <form name="price">
+            <input
+              class="field"
+              type="text"
+              name="user-name"
+              placeholder="Введите имя"
+            />
+            <input
+              class="field"
+              type="tel"
+              name="user-phone"
+              placeholder="Телефон"
+            />
+            <button class="button" type="submit">Получить расчет</button>
+          </form>
+          <div class="bg-block-accent"></div>
+          <div class="bg-block-calc">
+            <svg width="142" height="142">
+              <use href="./images/icons.svg#keys"></use>
+            </svg>
+          </div>
+        </div>
       </div>
     </section>
     <section class="works" id="works">
       <div class="container">
-        <h2 class="title">
-          Примеры выполненных сантехнических работ нашей компанией VIP Santeh
-        </h2>
+        <div class="block-header">
+          <h2 class="title">
+            Примеры выполненных сантехнических
+            <br />
+            работ нашей компанией VIP Santeh
+          </h2>
+          <ul class="list list-arrow">
+            <li class="item">
+              <button class="buttons-arrow button-left" type="button"></button>
+            </li>
+            <li class="item">
+              <button class="buttons-arrow button-right" type="button"></button>
+            </li>
+          </ul>
+        </div>
         <ul class="list">
-          <li class="item">
-            <div class="card-img"></div>
-            <h3 class="card-title">Отопление + водоснабжение</h3>
-            <p>Что было выполнено:</p>
-            <p>Подключены«из стены» 3 радиатора Rifar;</p>
-            <p>
-              Смонтированы выводы для стиральной машины, раковины, ванны и
-              кухни;
-            </p>
-            <p>Установлена сантехника.</p>
-            <ul class="list">
-              <li class="item">Стоимость работ составила: 85 000 ₽</li>
-              <li class="item">Стоимость материалов и радиаторов: 150 000 ₽</li>
-              <li class="item">
-                Срок выезда на объект и составления сметы: 2 дня
-              </li>
-              <li class="item">Срок выполнения работ: 2 дня</li>
-            </ul>
+          <li class="item card-item">
+            <div class="card-img">
+              <img
+                class="img-works"
+                src="./images/works1.jpg"
+                alt="фото работ"
+                width="289"
+                height="463"
+              />
+              <img
+                class="img-works"
+                src="./images/works2.jpg"
+                alt="фото работ"
+                width="289"
+                height="463"
+              />
+            </div>
+            <div>
+              <h3 class="card-title">Отопление + водоснабжение</h3>
+              <p class="card-header">Что было выполнено:</p>
+              <p class="text">Подключены«из стены» 3 радиатора Rifar;</p>
+              <p class="text">
+                Смонтированы выводы для стиральной машины, раковины, ванны и
+                кухни;
+              </p>
+              <p class="text">Установлена сантехника.</p>
+              <ul class="list price-list">
+                <li class="item">
+                  <svg class="card-icon" width="18" height="18">
+                    <use href="./images/icons.svg#stick"></use>
+                  </svg>
+                  Стоимость работ составила: 85 000 ₽
+                </li>
+                <li class="item">
+                  Стоимость материалов и радиаторов: 150 000 ₽
+                </li>
+                <li class="item">
+                  <svg class="card-icon" width="18" height="18">
+                    <use href="./images/icons.svg#clock"></use>
+                  </svg>
+                  Срок выезда на объект и составления сметы: 2 дня
+                </li>
+                <li class="item">Срок выполнения работ: 2 дня</li>
+              </ul>
+            </div>
           </li>
         </ul>
+        <div class="block-nav">
+          <button class="button-page" type="button"></button>
+        </div>
       </div>
     </section>
     <section class="experts section-bg">
@@ -609,21 +656,39 @@
         <h2 class="title">Эксперты VIP Santeh</h2>
         <ul class="list">
           <li class="item">
-            <div class="card-photo"></div>
-            <h3 class="card-title">Антон Одноволов</h3>
-            <p>
-              Инженер с опытом работ на премиальном рынке инженерии 15 лет.
-              Последние 6 лет является техническим директором бельгийского
-              производителя инженерных систем Henco Industries
-            </p>
+            <div class="card-photo">
+              <img
+                src="./images/expert1.png"
+                alt="фотография Антона Одноволова"
+                width="171"
+                height="171"
+              />
+            </div>
+            <div class="card-block">
+              <h3 class="card-title">Антон Одноволов</h3>
+              <p class="card-text">
+                Инженер с опытом работ на премиальном рынке инженерии 15 лет.
+                Последние 6 лет является техническим директором бельгийского
+                производителя инженерных систем Henco Industries
+              </p>
+            </div>
           </li>
           <li class="item">
-            <div class="card-photo"></div>
-            <h3 class="card-title">Иван Власов</h3>
-            <p>
-              Главный эксперт национального чемпионата Worldskills Russia в
-              компетенции «Сантехника и отопление»
-            </p>
+            <div class="card-photo">
+              <img
+                src="./images/expert2.png"
+                alt="фотография Ивана Власова"
+                width="171"
+                height="171"
+              />
+            </div>
+            <div class="card-block">
+              <h3 class="card-title">Иван Власов</h3>
+              <p class="card-text">
+                Главный эксперт национального чемпионата Worldskills Russia в
+                компетенции «Сантехника и отопление»
+              </p>
+            </div>
           </li>
         </ul>
       </div>
@@ -633,107 +698,146 @@
         <h2 class="title">Монтажники VIP Santeh</h2>
         <ul class="list">
           <li class="item">
-            <div class="card-photo"></div>
-            <h3 class="card-title">Виктор Салтыков</h3>
-            <p>
-              Монтажник санитарно-технический систем и оборудования, с
-              международно признаваемым дипломом Skills Passport, серебряный
-              призёр финала национального чемпионата WorldSkills Russia 2018
-            </p>
+            <div class="card-photo">
+              <img
+                src="./images/montag1.png"
+                alt="фотография Виктора Салтыкова"
+                width="171"
+                height="171"
+              />
+            </div>
+            <div class="card-block">
+              <h3 class="card-title">Виктор Салтыков</h3>
+              <p class="card-text">
+                Монтажник санитарно-технический систем и оборудования, с
+                международно признаваемым дипломом Skills Passport, серебряный
+                призёр финала национального чемпионата WorldSkills Russia 2018
+              </p>
+              <div class="card-certificate">
+                <img src="./images/montag1-certificate.jpg" alt="сертификат" />
+              </div>
+            </div>
           </li>
           <li class="item">
-            <div class="card-photo"></div>
-            <h3 class="card-title">Родион Тимофеев</h3>
-            <p>
-              Сантехник, основатель монтажной бригады с 2-х летним опытом работы
-              у топ-блогера по ремонту квартир Артура Манцевича
-            </p>
+            <div class="card-photo">
+              <img
+                src="./images/montag2.png"
+                alt="фотография Родиона Тимофеева"
+                width="171"
+                height="171"
+              />
+            </div>
+            <div class="card-block">
+              <h3 class="card-title">Родион Тимофеев</h3>
+              <p class="card-text">
+                Сантехник, основатель монтажной бригады с 2-х летним опытом
+                работы у топ-блогера по ремонту квартир Артура Манцевича
+              </p>
+            </div>
           </li>
         </ul>
       </div>
     </section>
     <section class="about-us">
       <div class="container">
-        <h2>О компании VIP Santeh в цифрах</h2>
+        <h2 class="title">О компании VIP Santeh в цифрах</h2>
         <ul class="list">
           <li class="item">
-            <p>5</p>
-            <p>лет опыта у каждого монтажника</p>
+            <p class="numbers">5</p>
+            <p class="text">лет опыта у каждого монтажника</p>
           </li>
           <li class="item">
-            <p>20</p>
-            <p>сертифицированных специалистов</p>
+            <p class="numbers">20</p>
+            <p class="text">сертифицированных специалистов</p>
+            <svg class="icon-hand icon-hand-big" width="55" height="56">
+              <use href="./images/icons.svg#hand"></use>
+            </svg>
+            <svg class="icon-hand icon-hand-medium" width="34" height="34">
+              <use href="./images/icons.svg#hand"></use>
+            </svg>
+            <svg class="icon-hand icon-hand-small" width="19" height="21">
+              <use href="./images/icons.svg#hand"></use>
+            </svg>
           </li>
           <li class="item">
-            <p>50</p>
-            <p>выполненных проектов</p>
+            <p class="numbers">50</p>
+            <p class="text">
+              выполненных
+              <br />
+              проектов
+            </p>
           </li>
         </ul>
       </div>
     </section>
     <section class="ordering-services">
       <div class="container">
-        <h2>Как заказать услуги в VIP Santeh?</h2>
+        <h2 class="title">Как заказать услуги в VIP Santeh?</h2>
         <ul class="list">
           <li class="item">
-            <p class="number">01</p>
+            <div class="icons-bottom"></div>
+            <div class="card-number"><p class="number">01</p></div>
             <h3 class="card-title">Заявка</h3>
-            <p>
+            <p class="text">
               Оставьте заявку на сайте или позвоните по номеру 8 (495) 108 24
               72.Наш специалист проконсультирует вас по видам, стоимости услуг и
               другим интересующим вас вопросам
             </p>
           </li>
           <li class="item">
-            <p class="number">02</p>
+            <div class="icons-top"></div>
+            <div class="card-number"><p class="number">02</p></div>
             <h3 class="card-title">
               Согласование деталей и выезд монтажника на объект
             </h3>
-            <p>
+            <p class="text">
               В течение 1 рабочего дня с вами свяжется руководитель будущего
               проекта для согласования бюджета, сроков монтажа и осмотра объекта
               специалистом
             </p>
           </li>
           <li class="item">
-            <p class="number">03</p>
+            <div class="icons-bottom"></div>
+            <div class="card-number"><p class="number">03</p></div>
             <h3 class="card-title">Подготовка к заключению договора</h3>
-            <p>
+            <p class="text">
               Мы отправим вам коммерческое предложение и согласуем строительную
               готовность объекта. Обсуждение возможно в WhatsApp, Skype или
               Telegram
             </p>
           </li>
           <li class="item">
-            <p class="number">04</p>
+            <div class="card-number"><p class="number">04</p></div>
             <h3 class="card-title">Заключение договора и предоплата</h3>
-            <p>
+            <p class="text">
               После подписания договора необходимо внести предоплату в размере
               30% от общей стоимости заказа
             </p>
           </li>
           <li class="item">
-            <p class="number">05</p>
+            <div class="icons-bottom"></div>
+            <div class="card-number"><p class="number">05</p></div>
             <h3 class="card-title">Подготовка к монтажным работам</h3>
-            <p>
+            <p class="text">
               Специалисты составят проект при необходимости, сделают замеры,
               обсудят с вами детали сметы, общую сумму материалов и
               проконтролируют состояние объекта
             </p>
           </li>
           <li class="item">
-            <p class="number">06</p>
+            <div class="icons-top"></div>
+            <div class="card-number"><p class="number">06</p></div>
             <h3 class="card-title">Проведение работ</h3>
-            <p>
+            <p class="text">
               Срок выполнения монтажа – от 1 до 2 недель. Специалисты проведут
               черновую уборку помещения и отправят клиенту отчет в виде фото и
               видео
             </p>
           </li>
           <li class="item">
-            <p class="number">07</p>
+            <div class="card-number"><p class="number">07</p></div>
             <h3 class="card-title">Презентация и сдача работ</h3>
-            <p>
+            <p class="text">
               В назначенную дату и время мы презентуем клиенту выполненную
               работу, передадим документы, гарантии и паспорта на сантехническое
               оборудование
@@ -743,129 +847,314 @@
       </div>
     </section>
     <section class="order-installer section-bg">
-      <div class="container">
-        <h2 class="title">
-          Закажите услуги монтажа сантехнических систем и получите устройство
-          для измерения давления в трубах
-        </h2>
-        <form name="installer">
-          <input
-            class="field"
-            type="text"
-            name="user-name"
-            placeholder="Введите имя"
-          />
-          <input
-            class="field"
-            type="tel"
-            name="user-phone"
-            placeholder="Телефон"
-          />
-          <button class="button" type="submit">Оставить заявку</button>
-        </form>
-        <p class="comment">+ тест на качество воды в подарок!</p>
+      <div class="bg-block">
+        <div class="container">
+          <h2 class="title">
+            Закажите услуги монтажа сантехнических систем и получите
+            <br />
+            устройство для измерения давления в трубах
+          </h2>
+          <form name="installer">
+            <input
+              class="field"
+              type="text"
+              name="user-name"
+              placeholder="Введите имя"
+            />
+            <input
+              class="field"
+              type="tel"
+              name="user-phone"
+              placeholder="Телефон"
+            />
+            <button class="button" type="submit">Оставить заявку</button>
+          </form>
+          <p class="comment">+ тест на качество воды в подарок!</p>
+
+          <div class="bg-block-accent"></div>
+          <div class="bg-block-counter"></div>
+        </div>
       </div>
     </section>
     <section class="reviews">
       <div class="container">
-        <h2>Отзывы клиентов</h2>
-        <ul class="list">
-          <li class="item">
-            <div class="card-photo"></div>
-            <h3 class="card-title">Елена Орлова</h3>
-            <p>
-              Операторы хорошо подготовленны, консультируют качественно. Круто
-              что для подтверждения заказа они применяют современные решения -
-              связываются роботы. Скрипты общения не слишком навязывающие, что
-              очень приятно. Удачи!
-            </p>
+        <div class="block-header">
+          <h2 class="title">Отзывы клиентов</h2>
+          <ul class="list list-arrow">
+            <li class="item">
+              <button class="buttons-arrow button-left" type="button"></button>
+            </li>
+            <li class="item">
+              <button class="buttons-arrow button-right" type="button"></button>
+            </li>
+          </ul>
+        </div>
+        <ul class="list list-card">
+          <li class="item-card">
+            <div class="card-photo">
+              <img
+                src="./images/client1.png"
+                alt="фотография клиента"
+                width="92"
+                height="92"
+              />
+            </div>
+            <div class="cards">
+              <h3 class="card-title">Елена Орлова</h3>
+              <div class="card-rating">
+                <svg class="icon-rating rating-good" width="14" height="13">
+                  <use href="./images/icons.svg#star"></use>
+                </svg>
+                <svg class="icon-rating rating-good" width="14" height="13">
+                  <use href="./images/icons.svg#star"></use>
+                </svg>
+                <svg class="icon-rating rating-good" width="14" height="13">
+                  <use href="./images/icons.svg#star"></use>
+                </svg>
+                <svg class="icon-rating rating-good" width="14" height="13">
+                  <use href="./images/icons.svg#star"></use>
+                </svg>
+                <svg class="icon-rating rating-good" width="14" height="13">
+                  <use href="./images/icons.svg#star"></use>
+                </svg>
+              </div>
+              <p class="text">
+                Операторы хорошо подготовленны, консультируют качественно. Круто
+                что для подтверждения заказа они применяют современные решения -
+                связываются роботы. Скрипты общения не слишком навязывающие, что
+                очень приятно. Удачи!
+              </p>
+            </div>
           </li>
-          <li class="item">
-            <div class="card-photo"></div>
-            <h3 class="card-title">Иван Гончаров</h3>
-            <p>
-              Операторы хорошо подготовленны, консультируют качественно. Круто
-              что для подтверждения заказа они применяют современные решения -
-              связываются роботы. Скрипты общения не слишком навязывающие, что
-              очень приятно. Удачи!
-            </p>
+          <li class="item-card">
+            <div class="card-photo">
+              <img
+                src="./images/client2.png"
+                alt="фотография клиента"
+                width="92"
+                height="92"
+              />
+            </div>
+            <div class="cards">
+              <h3 class="card-title">Иван Гончаров</h3>
+              <div class="card-rating">
+                <svg class="icon-rating rating-good" width="14" height="13">
+                  <use href="./images/icons.svg#star"></use>
+                </svg>
+                <svg class="icon-rating rating-good" width="14" height="13">
+                  <use href="./images/icons.svg#star"></use>
+                </svg>
+                <svg class="icon-rating rating-good" width="14" height="13">
+                  <use href="./images/icons.svg#star"></use>
+                </svg>
+                <svg class="icon-rating rating-good" width="14" height="13">
+                  <use href="./images/icons.svg#star"></use>
+                </svg>
+                <svg class="icon-rating" width="14" height="13">
+                  <use href="./images/icons.svg#star"></use>
+                </svg>
+              </div>
+              <p class="text">
+                Операторы хорошо подготовленны, консультируют качественно. Круто
+                что для подтверждения заказа они применяют современные решения -
+                связываются роботы. Скрипты общения не слишком навязывающие, что
+                очень приятно. Удачи!
+              </p>
+            </div>
           </li>
         </ul>
+        <div class="block-nav">
+          <button class="button-page" type="button"></button>
+        </div>
       </div>
     </section>
     <section class="questions">
       <div class="container">
-        <h2>Вопросы и ответы</h2>
+        <h2 class="title">Вопросы и ответы</h2>
         <ul class="list">
           <li class="item">
-            <p class="question">
-              Через какое время после подписания договора начнутся монтажные
-              работы?
-            </p>
-            <p class="answer">
-              За месяц до начала работ устанавливается предварительная дата
-              начала работ. За неделю вам необходимо отправить специалисту фото,
-              подтверждающее готовность объекта к работе. После этого он
-              согласует с вами конкретный день начала монтажа.
-            </p>
+            <div class="block-question">
+              <p class="question">
+                Через какое время после подписания договора начнутся монтажные
+                работы?
+              </p>
+              <p class="answer">
+                За месяц до начала работ устанавливается предварительная дата
+                начала работ. За неделю вам необходимо отправить специалисту
+                фото, подтверждающее готовность объекта к работе. После этого он
+                согласует с вами конкретный день начала монтажа.
+              </p>
+            </div>
+            <div class="block-button">
+              <button class="button-question button-close">
+                <svg class="icons" width="20" height="10">
+                  <use href="./images/icons.svg#arrow-up"></use>
+                </svg>
+                <svg class="icons icons-hide" width="20" height="10">
+                  <use href="./images/icons.svg#arrow-done"></use>
+                </svg>
+              </button>
+            </div>
           </li>
           <li class="item">
-            <p class="question">
-              Какие сертификаты имеет сантехническое оборудование?
-            </p>
+            <div class="block-question">
+              <p class="question">
+                Какие сертификаты имеет сантехническое оборудование?
+              </p>
+            </div>
+            <div class="block-button">
+              <button class="button-question button-open">
+                <svg class="iconss icons-hide" width="20" height="10">
+                  <use href="./images/icons.svg#arrow-up"></use>
+                </svg>
+                <svg class="icon" width="20" height="10">
+                  <use href="./images/icons.svg#arrow-done"></use>
+                </svg>
+              </button>
+            </div>
           </li>
           <li class="item">
-            <p class="question">
-              Какой тест на качество воды я получу в подарок при заказе услуг в
-              VIP Santeh?
-            </p>
+            <div class="block-question">
+              <p class="question">
+                Какой тест на качество воды я получу в подарок при заказе услуг
+                в VIP Santeh?
+              </p>
+            </div>
+            <div class="block-button">
+              <button class="button-question button-open">
+                <svg class="iconss icons-hide" width="20" height="10">
+                  <use href="./images/icons.svg#arrow-up"></use>
+                </svg>
+                <svg class="icon" width="20" height="10">
+                  <use href="./images/icons.svg#arrow-done"></use>
+                </svg>
+              </button>
+            </div>
           </li>
           <li class="item">
-            <p class="question">
-              Могу ли я сам предоставить сантехнические материалы для работ?
-            </p>
+            <div class="block-question">
+              <p class="question">
+                Могу ли я сам предоставить сантехнические материалы для работ?
+              </p>
+            </div>
+            <div class="block-button">
+              <button class="button-question button-open">
+                <svg class="iconss icons-hide" width="20" height="10">
+                  <use href="./images/icons.svg#arrow-up"></use>
+                </svg>
+                <svg class="icon" width="20" height="10">
+                  <use href="./images/icons.svg#arrow-done"></use>
+                </svg>
+              </button>
+            </div>
           </li>
           <li class="item">
-            <p class="question">Как происходит оплата услуг?</p>
+            <div class="block-question">
+              <p class="question">Как происходит оплата услуг?</p>
+            </div>
+            <div class="block-button">
+              <button class="button-question button-open">
+                <svg class="iconss icons-hide" width="20" height="10">
+                  <use href="./images/icons.svg#arrow-up"></use>
+                </svg>
+                <svg class="icon" width="20" height="10">
+                  <use href="./images/icons.svg#arrow-done"></use>
+                </svg>
+              </button>
+            </div>
           </li>
           <li class="item">
-            <p class="question">Можно ли разделить оплату услуг на части?</p>
+            <div class="block-question">
+              <p class="question">Можно ли разделить оплату услуг на части?</p>
+            </div>
+            <div class="block-button">
+              <button class="button-question button-open">
+                <svg class="iconss icons-hide" width="20" height="10">
+                  <use href="./images/icons.svg#arrow-up"></use>
+                </svg>
+                <svg class="icon" width="20" height="10">
+                  <use href="./images/icons.svg#arrow-done"></use>
+                </svg>
+              </button>
+            </div>
           </li>
           <li class="item">
-            <p class="question">Сколько стоит выезд специалиста на объект?</p>
+            <div class="block-question">
+              <p class="question">Сколько стоит выезд специалиста на объект?</p>
+            </div>
+            <div class="block-button">
+              <button class="button-question button-open">
+                <svg class="iconss icons-hide" width="20" height="10">
+                  <use href="./images/icons.svg#arrow-up"></use>
+                </svg>
+                <svg class="icon" width="20" height="10">
+                  <use href="./images/icons.svg#arrow-done"></use>
+                </svg>
+              </button>
+            </div>
           </li>
           <li class="item">
-            <p class="question">
-              Выполняете ли вы доставку материалов на объект?
-            </p>
+            <div class="block-question">
+              <p class="question">
+                Выполняете ли вы доставку материалов на объект?
+              </p>
+            </div>
+            <div class="block-button">
+              <button class="button-question button-open">
+                <svg class="iconss icons-hide" width="20" height="10">
+                  <use href="./images/icons.svg#arrow-up"></use>
+                </svg>
+                <svg class="icon" width="20" height="10">
+                  <use href="./images/icons.svg#arrow-done"></use>
+                </svg>
+              </button>
+            </div>
           </li>
           <li class="item">
-            <p class="question">Работаете ли вы с юридическими лицами?</p>
+            <div class="block-question">
+              <p class="question">Работаете ли вы с юридическими лицами?</p>
+            </div>
+            <div class="block-button">
+              <button class="button-question button-open">
+                <svg class="iconss icons-hide" width="20" height="10">
+                  <use href="./images/icons.svg#arrow-up"></use>
+                </svg>
+                <svg class="icon" width="20" height="10">
+                  <use href="./images/icons.svg#arrow-done"></use>
+                </svg>
+              </button>
+            </div>
           </li>
         </ul>
       </div>
     </section>
     <section class="form section-bg">
-      <div class="container">
-        <h2 class="title">
-          Закажите монтаж и капитальный ремонт сантехнического оборудования с
-          использованием европейской сантехники и материалов премиум-качества
-        </h2>
-        <form name="installer">
-          <input
-            class="field"
-            type="text"
-            name="user-name"
-            placeholder="Введите имя"
-          />
-          <input
-            class="field"
-            type="tel"
-            name="user-phone"
-            placeholder="Телефон"
-          />
-          <button class="button" type="submit">Оставить заявку</button>
-        </form>
+      <div class="bg-block">
+        <div class="container">
+          <h2 class="title">
+            Закажите монтаж и капитальный ремонт сантехнического
+            <br />
+            оборудования с использованием европейской сантехники и
+            <br />
+            материалов премиум-качества
+          </h2>
+          <form name="installer">
+            <input
+              class="field"
+              type="text"
+              name="user-name"
+              placeholder="Введите имя"
+            />
+            <input
+              class="field"
+              type="tel"
+              name="user-phone"
+              placeholder="Телефон"
+            />
+            <button class="button" type="submit">Оставить заявку</button>
+          </form>
+        </div>
+        <div class="bg-block-accent"></div>
       </div>
     </section>
     <section class="contacts">
