@@ -161,7 +161,7 @@ h6 {
   background-color: var(--accent);
 }
 
-.header .contacts {
+.header .contacts-header {
   display: block;
   margin-left: auto;
   align-self: flex-end;
@@ -1198,6 +1198,16 @@ form .button {
 
 /* ------------------------------------ Questions ----------------------------------- */
 
+.questions .bg-block {
+  width: 1440px;
+  margin: 0 auto;
+  background-image: url(../images/santeh-system.png);
+  background-repeat: no-repeat;
+  background-position: right 50%;
+  outline: 1px solid yellow;
+  /* background-size: contain; */
+}
+
 .questions .container {
   padding-top: 39px;
   padding-bottom: 152px;
@@ -1262,9 +1272,10 @@ form .button {
   position: relative;
   width: 1440px;
   margin: 0 auto;
-  background-image: url(../images/rect55.svg), url(../images/rect56.svg);
+  background-image: url(../images/Guage.svg), url(../images/rect55.svg),
+    url(../images/rect56.svg);
   background-repeat: no-repeat;
-  background-position: 81% bottom, 95% 24%;
+  background-position: 80% 0, 81% bottom, 95% 24%;
 }
 
 .form .bg-block-accent {
@@ -1286,4 +1297,81 @@ form .button {
   ont-weight: 700;
   font-size: 27px;
   margin-bottom: 46px;
+}
+
+/* ------------------------------------ contacts ----------------------------------- */
+.contacts .container {
+  padding-top: 58px;
+  padding-bottom: 129px;
+}
+
+.contacts .list {
+  display: flex;
+}
+
+.contacts .item {
+  width: 360px;
+  padding: 49px 56px 51px 40px;
+}
+
+.contacts .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.contacts .contact-icon {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 106px;
+}
+
+.contacts .contact-text {
+  font-size: 14px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.contacts .link {
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+/* ------------------------------------ contacts ----------------------------------- */
+.footer .container {
+  padding-top: 50px;
+  padding-bottom: 60px;
+  display: flex;
+  color: var(--bg-color);
+}
+
+.footer .logotype {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer .logotype svg {
+  margin-right: 92px;
+}
+
+.footer .logotype p {
+  position: relative;
+  display: block;
+  text-align: center;
+}
+
+.footer .logotype p::before {
+  content: '';
+  width: 2px;
+  height: 28px;
+  background-color: var(--icons);
+  position: absolute;
+  bottom: 0;
+  left: -39px;
+}
+
+.footer .list {
+  margin-left: auto;
+}
+
+.footer .list .item:not(:last-child) {
+  margin-right: 61px;
 }
